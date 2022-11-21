@@ -21,9 +21,9 @@ async def reload_bot(ctx):
 	await ctx.defer()
 	if ctx.author.guild_permissions.administrator:
 		datas.datas = datas.load_data()
-		await ctx.followup.respond('正在重新載入!!')
+		await ctx.followup.send('正在重新載入!!')
 	else:
-		await ctx.followup.respond('你沒有指令權限!!')
+		await ctx.followup.send('你沒有指令權限!!')
 
 
 @bot_command.command(description='儲存機器人數據')
