@@ -7,9 +7,11 @@ from os import getenv
 
 
 bot = discord.Bot()
+
+
 @bot.event
 async def on_ready():
-	print(f"We have logged in as {bot.user}")
+    print(f"We have logged in as {bot.user}")
 
 load_dotenv()
 bot.add_application_command(godot_command)
