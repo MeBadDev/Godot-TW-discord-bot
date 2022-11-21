@@ -18,7 +18,7 @@ def add_coin(user, amount):
     if str(user) in datas['Coins']:
         datas['Coins'][str(user)] += amount
     else:
-        datas['Coins'][str(user)] = 0
+        datas['Coins'][str(user)] = amount
     save_data()
 
 
@@ -26,7 +26,7 @@ def set_coin(user, amount):
     if str(user) in datas['Coins']:
         datas['Coins'][str(user)] = amount
     else:
-        datas['Coins'][str(user)] = 0
+        datas['Coins'][str(user)] = amount
     save_data()
 
 
